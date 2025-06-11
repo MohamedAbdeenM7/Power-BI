@@ -1,0 +1,50 @@
+# 🌱 Plant Species Power BI Analysis
+
+## 📝 Overview
+This Power BI dashboard provides an in-depth analysis of plant species data. The dashboard is designed to help users explore distributions, trends, and key insights related to plant species diversity, classification, and geographical presence.
+
+## 🎯 Objectives
+- Analyze the distribution of plant species by family, genus, and region.
+- Understand diversity and richness of plant types in various environments.
+- Highlight key metrics such as total species, most common families, and geographic spread.
+- Enable interactive exploration through filters and visuals.
+
+## 📂 Data Source
+- **Dataset:** Plant species data
+- **Source Type:** Imported data
+- **Contents:** Species Name, Family, Genus, Region, Conservation Status, Occurrence, and Description.
+
+## 📈 Key Visuals and Features
+- **Bar Charts:** Most common plant families and genera.
+- **Map Visuals:** Geographic distribution of plant species.
+- **Donut/Pie Charts:** Proportion of species by conservation status or family.
+- **KPI Cards:** Total number of species, regions covered, and protected species.
+- **Tables:** Detailed view of species with filter and sort options.
+- **Slicers:** Filter by family, region, conservation status, or genus.
+
+## 🧮 Data Modeling
+- Relationships created between tables (e.g., Families, Species, Regions)
+- **Calculated Columns / Measures (examples):**
+  - `Total Species = COUNTROWS('Species')`
+  - `Endangered Species = CALCULATE(COUNTROWS('Species'), 'Species'[Conservation Status] = "Endangered")`
+  - `Species Richness per Region = DISTINCTCOUNT('Species'[Species Name])`
+
+## 🧠 Insights
+- Identify biodiversity hotspots and regions with high species richness.
+- Track distribution and concentration of threatened species.
+- Understand taxonomic patterns and prevalence of plant families.
+
+## 🛠 How to Use
+1. Open the `.pbix` file in Power BI Desktop.
+2. Use slicers to filter data by family, region, conservation status, or genus.
+3. Hover over visuals for additional details and tooltips.
+4. Navigate between report pages using the tabs at the bottom.
+
+## 📌 Notes
+- The dashboard is optimized for use in Power BI Desktop.
+- All visuals are interactive and respond to filtering.
+- Data cleaning and transformation were performed using Power Query in Power BI.
+
+---
+
+For more Power BI projects and dashboards, visit the [main repository](https://github.com/MohamedAbdeenM7/Power-BI).
