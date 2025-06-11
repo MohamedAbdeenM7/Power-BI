@@ -1,0 +1,54 @@
+Amazon Movies and TV Shows Dashboard
+====================================
+
+Overview
+--------
+This Power BI dashboard provides an analytical view of Amazon's Movies and TV Shows dataset. The dashboard is designed to help users explore trends, distributions, and key performance indicators related to the content available on Amazon's streaming platform.
+
+Objectives
+----------
+- Analyze the distribution of movies and TV shows by genre, release year, and ratings.
+- Understand viewer preferences and content trends.
+- Highlight key performance indicators such as total titles, average ratings, and content types.
+- Provide filters and interactive visuals to enable custom exploration.
+
+Data Source
+-----------
+- Dataset: Amazon Movies and TV Shows
+- Source Type: Imported data
+- Contents: Title, Type (Movie/TV Show), Genre, IMDb Rating, Release Year, Country, Duration, and Description
+
+Key Visuals and Features
+------------------------
+- Bar Charts: Show top genres by number of titles.
+- Line Chart: Trend of content releases over the years.
+- Donut Charts: Distribution by type (Movie vs TV Show) and content ratings.
+- KPI Cards: Display total number of titles, average IMDb rating, and other summary metrics.
+- Tables: Detailed view of titles with sorting/filtering by rating, year, or genre.
+- Slicers: Allow filtering by Genre, Type, Country, and Release Year.
+
+Data Modeling
+-------------
+- Proper relationships created between tables (e.g., Genre and Content)
+- Calculated Columns / Measures (examples):
+  - Average IMDb Rating = AVERAGE('Table'[IMDb Rating])
+  - Total Titles = COUNTROWS('Table')
+
+Insights
+--------
+- Identify the most common genres and content types.
+- Track how Amazon's content offerings have evolved over time.
+- Understand user preferences based on IMDb ratings.
+
+How to Use
+----------
+1. Open the `.pbix` file in Power BI Desktop.
+2. Use the slicers on the top or side panel to filter the visuals.
+3. Hover over charts for tooltips and drill-through capabilities.
+4. Navigate between report pages using the bottom tab navigation.
+
+Notes
+-----
+- The dashboard is optimized for desktop viewing.
+- All visuals are interactive and respond to user filtering.
+- Data cleaning and transformation were done inside Power BI using Power Query.
