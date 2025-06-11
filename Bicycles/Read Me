@@ -1,0 +1,51 @@
+# 🚲 Bicycles Power BI Analysis
+
+## 📝 Overview
+This Power BI dashboard provides an analytical view of bicycle-related data. The dashboard is designed to help users explore trends, distributions, and key performance indicators related to bicycle sales, customers, and inventory.
+
+## 🎯 Objectives
+- Analyze the distribution of bicycle sales by category, region, and time period.
+- Understand customer demographics and purchasing behavior.
+- Highlight key performance indicators such as total sales, top categories, and inventory status.
+- Provide filters and interactive visuals for custom exploration.
+
+## 📂 Data Source
+- **Dataset:** Bicycle sales and inventory data
+- **Source Type:** Imported data
+- **Contents:** Product Name, Category, Sales Amount, Date, Region, Customer Demographics, Inventory Levels, and more.
+
+## 📈 Key Visuals and Features
+- **Bar Charts:** Top-performing bicycle categories and regions.
+- **Line Chart:** Trends in sales over various time periods.
+- **Donut/Pie Charts:** Distribution by category, region, or customer type.
+- **KPI Cards:** Total sales, number of customers, inventory levels, and other summary metrics.
+- **Tables:** Detailed view of sales or inventory, sortable and filterable.
+- **Slicers:** Interactive filtering by category, region, date, and customer segment.
+
+## 🧮 Data Modeling
+- Relationships created between tables (e.g., Products, Sales, Customers, Inventory)
+- **Calculated Columns / Measures (examples):**
+  - `Total Sales = SUM('Sales'[Amount])`
+  - `Average Sales per Customer = AVERAGE('Sales'[Amount])`
+  - `Inventory Turnover = [Total Sales] / [Average Inventory]`
+
+## 🧠 Insights
+- Identify best-selling bicycle categories and regions.
+- Track sales growth and seasonality.
+- Analyze customer segmentation and repeat purchase rates.
+- Monitor inventory efficiency and stock levels.
+
+## 🛠 How to Use
+1. Open the `.pbix` file in Power BI Desktop.
+2. Use the slicers on the report to filter data by category, region, date, or customer group.
+3. Hover over visuals for detailed tooltips and drill-through analysis.
+4. Navigate between report pages using the bottom tabs.
+
+## 📌 Notes
+- The dashboard is optimized for desktop use.
+- All visuals are interactive and dynamically respond to filters.
+- Data cleaning and transformation were performed using Power Query inside Power BI.
+
+---
+
+For more Power BI projects, visit the [main repository](https://github.com/MohamedAbdeenM7/Power-BI).
