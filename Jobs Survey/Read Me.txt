@@ -1,0 +1,56 @@
+Job Survey Dashboard
+============================================
+
+Overview
+--------
+This Power BI dashboard analyzes survey data from data professionals across various roles, industries, and geographies. It provides interactive visualizations and insights into the tools, salaries, job satisfaction, education levels, and career paths of data professionals.
+
+Objectives
+----------
+- Visualize the demographic breakdown of survey respondents.
+- Explore salary distributions across different roles and regions.
+- Analyze tool usage trends (programming languages, BI tools, databases, etc.).
+- Identify correlations between education, experience, and compensation.
+- Enable filtering to explore specific subgroups within the data.
+
+Data Source
+-----------
+- Dataset: Survey of Data Professionals
+- Source Type: Imported data
+- Columns: Country, Role, Experience, Education, Salary, Tools Used, Industry, Gender, etc.
+
+Key Visuals and Features
+------------------------
+- **Bar Charts**: Top tools used by data professionals.
+- **Box Plots / Histograms**: Salary distributions by role, region, and experience.
+- **Pie / Donut Charts**: Distribution by job titles, education level, and gender.
+- **Map Visual**: Geographic distribution of respondents.
+- **KPI Cards**: Median salary, total respondents, average experience, etc.
+- **Slicers**: Filters for role, region, experience, education, and tool usage.
+
+Data Modeling
+-------------
+- Relationships created between tables (e.g., Respondents ↔ Tools ↔ Demographics)
+- Calculated Measures (examples):
+  - Median Salary = MEDIAN('Survey'[Salary])
+  - Average Experience = AVERAGE('Survey'[Years of Experience])
+
+Insights
+--------
+- Highlight high-paying roles and regions.
+- Show trends in tool popularity among data professionals.
+- Reveal differences in compensation based on education and experience.
+- Surface diversity metrics across demographics.
+
+How to Use
+----------
+1. Open the `.pbix` file in Power BI Desktop.
+2. Use the filters/slicers to explore specific segments of the data.
+3. Hover over visuals for more detailed information.
+4. Navigate between pages using the tabs at the bottom of the report.
+
+Notes
+-----
+- All data has been cleaned and transformed using Power Query.
+- The dashboard is interactive and supports cross-filtering across all visuals.
+- Optimized for desktop display with responsive filtering.

@@ -1,0 +1,58 @@
+Electronic Products Financial Analysis Dashboard
+============================
+
+Overview
+--------
+This Power BI dashboard delivers a comprehensive financial performance overview across key business metrics. It is designed to support strategic decision-making by tracking revenue, expenses, profit margins, and trends over time.
+
+Objectives
+----------
+- Provide insights into financial performance over time.
+- Visualize revenue streams, cost breakdowns, and profitability.
+- Track key financial ratios and indicators.
+- Compare actuals vs. targets or budgets.
+- Enable detailed exploration via filters and drill-downs.
+
+Data Source
+-----------
+- Dataset: Financial statements (Actuals and/or Forecasts)
+- Source Type: Imported (Excel, CSV, SQL, etc.)
+- Contents: Revenue, COGS, Operating Expenses, Net Profit, Departments, Time Periods, KPIs, etc.
+
+Key Visuals and Features
+------------------------
+- **Line Charts**: Revenue and profit trends over time.
+- **Bar/Column Charts**: Expense breakdowns by category or department.
+- **KPI Cards**: Net Profit, Gross Margin %, Revenue Growth %, OPEX Ratio, etc.
+- **Waterfall Chart**: Visualizes changes in profit from revenue down to net income.
+- **Tables**: Detailed view of financial metrics by month, quarter, or business unit.
+- **Slicers**: Filter by year, department, product, region, etc.
+
+Data Modeling
+-------------
+- Time intelligence using a Date table for period comparisons (YTD, QTD, MoM, YoY)
+- Relationships between financial metrics, departments, and time dimensions
+- Calculated Measures (examples):
+  - Gross Margin % = DIVIDE([Gross Profit], [Revenue])
+  - Net Profit = [Revenue] - [COGS] - [Operating Expenses]
+  - Revenue Growth % = ([Current Period Revenue] - [Previous Period Revenue]) / [Previous Period Revenue]
+
+Insights
+--------
+- Monitor profitability and operational efficiency.
+- Identify departments or regions with high expenses or revenue leakage.
+- Track progress toward financial goals.
+- Support monthly, quarterly, and annual reporting.
+
+How to Use
+----------
+1. Open the `.pbix` file in Power BI Desktop.
+2. Use slicers to filter data by time, region, or department.
+3. Explore KPI cards for a quick summary of financial health.
+4. Drill down into charts and tables for granular analysis.
+
+Notes
+-----
+- All data cleansing and transformations were done using Power Query.
+- Dashboard follows standard financial reporting best practices.
+- Designed for cross-functional use: finance teams, management, and operations.
